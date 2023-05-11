@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+        <div class="container">
+          <div class="container__blocks block">
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item"></div>
+            <div class="block__item block__item_full"></div>
+          </div>
+          <div class="container__menu menu">
+            <div class="menu__comment active" id="comments">Комментарии</div>
+            <div class="menu__filter filter" id="filter">
+              <div class="filter__text">По дате</div>
+              <div class="filter__arrow">
+                <img src="/img/Arrow 1.svg" alt="" />
+              </div>
+            </div>
+            <div class="menu__favorite favorite" id="favorites">
+              <div class="favorite__text">Избранное</div>
+              <div class="favorite__arrow">
+                <img src="/img/favorite.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="screen">
+            <div class="container__form form" id="input">
+            <div class="form__avatar">
+              <img
+                src="/img/avatar/samsung-memory-hjRC0i0oJxg-unsplash 1.png"
+                alt="" class="avatar-img"
+              />
+            </div>
+            <div class="form__input input">
+              <div class="input__nameAndMax">
+                <div class="input__name name">Максим Авдеенко</div>
+                <div class="input__max">Макс. 1000 символов</div>
+              </div>
+              <div class="input__input">
+                <textarea name="" id="" cols="30" rows="1" class="input__message"></textarea>
+                <button class="input_btn">Отправить</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="container__comment comment">
+            <div class="">
+              <img
+                src="/img/avatar/2.png"
+                alt=""
+              />
+            </div>
+            <div class="comment__body body-comment">
+                <div class="body-comment__info">
+                    <div class="body-comment__name name">Алексей_1994b</div>
+                    <div class="body-comment__date">15.01 13:55</div>
+                </div>
+                <div class="body-comment__text">
+                    Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 'Кольца власти' просто позаимствовали имена из оригинала, куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.
+                </div>
+                <div class="body-comment__params params">
+                    <div class="params__ans ans">
+                        <img class="img-ans" src="/img/params/answer.svg" alt="">
+                        <div class="ans__text">Ответить</div>
+                    </div>
+                    <div class="params__ans ans">
+                        <img class="img-ans" src="/img/params/favorite.svg" alt="">
+                        <div class="ans__text">В избранном</div>
+                    </div>
+                    <div class="params__like like">
+                        <img src="/img/params/like/minus.svg" alt="">
+                        <div class="like__number">6</div>
+                        <img src="/img/params/like/plus.svg" alt="">
+                    </div>
+                </div>  
+            </div>
+        </div>
+          <div class="container__answer answer ">
+            <div class="">
+              <img
+                src="/img/answer/avatar.png"
+                alt=""
+              />
+            </div>
+            <div class="answer__body body-answer answer-answer">
+                <div class="body-answer__info answer-answer__info">
+                    <div class="body-answer__name name answer-answer__name">Джунбокс3000</div>
+                    <div class="answer__ansOf">
+                      <img src="/img/params/answer.svg" alt="">
+                      <div class="answer__ansOfText">Алексей_1994b</div>
+                      
+                    </div>
+                    <div class="body-answer__date answer-answer__date">15.01 13:55</div>
+                </div>
+                <div class="body-answer__text answer-answer__text">
+                    Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 'Кольца власти' просто позаимствовали имена из оригинала, куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.
+                </div>
+                <div class="body-answer__params params">
+                    <div class="params__ans ans">
+                        <img class="img-ans" src="/img/params/answer.svg" alt="">
+                        <div class="ans__text">Ответить</div>
+                    </div>
+                    <div class="params__ans ans">
+                        <img class="img-ans" src="/img/params/favorite.svg" alt="">
+                        <div class="ans__text">В избранном</div>
+                    </div>
+                    <div class="params__like like">
+                        <img src="/img/params/like/minus.svg" alt="">
+                        <div class="like__number">6</div>
+                        <img src="/img/params/like/plus.svg" alt="">
+                    </div>
+                </div>  
+            </div>
+        </div> -->
+          </div>
+          
+      </main>
+    </div>
+    
+  </body>
+</html>

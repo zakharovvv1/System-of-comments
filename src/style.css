@@ -1,0 +1,330 @@
+Обнуление ------------------------------------------------------------*/ *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  min-height: 100px;
+  background-color: #d9d9d9;
+}
+
+.container {
+  max-width: 1108px;
+  margin: 0 auto;
+}
+
+.container__comment {
+  max-width: 1108px;
+}
+
+.container__blocks {
+  padding: 40px 0px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 48px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.block__item {
+  background-color: #d9d9d9;
+  flex: 0 0 47%;
+  min-height: 61px;
+  min-width: 50px;
+}
+
+.block__item_full {
+  flex: 0 0 100%;
+  min-height: 168px;
+}
+
+.menu {
+  text-decoration: underline;
+  display: flex;
+  column-gap: 55px;
+  padding-top: 20px;
+}
+
+.menu > div {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 700;
+  color: black;
+  opacity: 1;
+  transition: color 1s ease;
+}
+
+.menu__favorite,
+.menu__filter {
+}
+
+.filter {
+  display: flex;
+  column-gap: 7px;
+}
+
+.favorite {
+  display: flex;
+  column-gap: 7px;
+}
+
+.form {
+  padding-top: 30px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.form__avatar img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.avatar-comment-img img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.input__nameAndMax {
+  display: flex;
+  /* justify-content: space-between; */
+  flex: 0 1 100%;
+}
+
+.name {
+  margin-right: 453px;
+  font-size: 22px;
+  color: #122ac0;
+  font-weight: 500;
+}
+
+.input__max {
+  font-size: 17px;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+.input__input {
+  display: flex;
+  flex: 0 1 100%;
+  column-gap: 30px;
+}
+
+.input__message {
+  min-height: 61px;
+  font-size: 22px;
+  flex: 1 1 auto;
+  /* opacity: 0.4; */
+  padding-left: 30px;
+}
+
+.input_btn {
+  font-size: 18px;
+  padding: 0px 30px;
+}
+
+.input_btn-color {
+  background-color: #abd873;
+}
+
+.comment,
+.answer {
+  padding-top: 40px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.body-comment__info,
+.body-answer__info {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+[class*='body-comment-num'] {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.body-comment__name,
+.body-answer__name {
+  margin: 0;
+}
+
+.body-answer,
+.body-comment {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.body-comment__text,
+.body-answer__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: start;
+}
+
+.body-comment__date,
+.body-answer__date {
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.params,
+.ans {
+  display: flex;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.ans__text:hover {
+  opacity: 1;
+}
+
+.ans__favorite-com:hover {
+  opacity: 1;
+}
+
+.ans__favorite-ans:hover {
+  opacity: 1;
+}
+
+.params {
+  column-gap: 20px;
+}
+
+.ans {
+  column-gap: 10px;
+}
+
+.ans__text,
+.ans__favorite-com,
+.ans__favorite-ans {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.4;
+  border: none;
+}
+
+.like-params-com,
+.like-params-ans {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.answer {
+  padding-left: 91px;
+}
+
+.answer__ansOf {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* класс для показа, что в избранном ничего нет */
+
+#comments {
+  text-align: center;
+}
+
+.titleFavorite {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.active-screen {
+  display: block;
+}
+
+.ans-nameCommentator {
+  display: flex;
+  column-gap: 10px;
+  cursor: default;
+}
+
+.filters:hover {
+  color: white;
+  background-color: #122ac0;
+}
+
+.rating-minus {
+  color: red;
+}
+
+textarea {
+  resize: vertical;
+}
